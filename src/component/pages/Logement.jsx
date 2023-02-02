@@ -1,5 +1,5 @@
 import logo from '../../assets/logo.png';
-import '../../styles/App.css';
+import '../../styles/App.scss';
 
 function Logement() {
     return (
@@ -7,6 +7,7 @@ function Logement() {
             <header className='App-header'>
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
+                    LOGEMENT
                     Cette page est en cours de création ! <br/>
                     Veuillez patientez quelque semaine merci ! 🫶
                 </p>
