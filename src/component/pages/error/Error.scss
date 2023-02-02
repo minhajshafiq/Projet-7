@@ -1,0 +1,14 @@
+.error {
+    text-align: center;
+    color:#FF6060;
+    &_title{
+        font-size: 288px;
+    }
+    &_p{
+        font-size: 36px ;
+    }
+    &_link{
+        font-size: 18px;
+        color:#FF6060;
+    }
+}

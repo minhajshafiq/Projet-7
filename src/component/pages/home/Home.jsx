@@ -1,8 +1,6 @@
-import React from 'react';
+import Card from '../../apartmentCard/apartmentCard.jsx'
 
-import Card from '../apartmentCard/apartmentCard.jsx'
-
-import HeroBanner from '../heroBanner/HeroBanner.jsx';
+import HeroBanner from '../../heroBanner/HeroBanner.jsx';
 
 
 function Home() {

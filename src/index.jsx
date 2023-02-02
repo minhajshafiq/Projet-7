@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import "../src/styles/index.scss";
 
-import Home from './component/pages/Home';
+import Home from './component/pages/home/Home';
 import Logement from './component/pages/Logement.jsx';
 import About from './component/pages/AboutUs.jsx';
-import Error from './component/pages/Error.jsx';
+import Error from './component/pages/error/Error.jsx';
 
 import Header from './component/header/Header.jsx';
 import Footer from './component/footer/Footer.jsx';

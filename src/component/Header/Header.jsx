@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import kasalogo from "../../assets/logo.png"
 
+import './Header.scss'
+
 function Header() {
     return (
         <header>
