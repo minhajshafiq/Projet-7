@@ -1,44 +1,22 @@
-// import AboutUsBg from "../../../assets/aboutUsBg.png"
-// <img src={AboutUsBg} className="about_bg" alt="logo" />
+import AboutUsBg from "../../../assets/aboutUsBg.png"
+import Collapse from '../../Collapse/Collapse';
+import './AboutUs.scss'
 
-import React, { useState } from "react";
-
-const About = () => {
-  const [index, setIndex] = useState(0);
-  const texts = [
-    "Sécurité: Nous nous engageons à assurer la sécurité de vos données et de vos informations personnelles.",
-    "Fiabilité: Nous garantissons la fiabilité de nos produits et services pour vous offrir une expérience utilisateur de qualité.",
-    "Respect: Nous respectons votre vie privée et vos droits en matière de protection de vos données personnelles.",
-    "Responsabilité: Nous sommes entièrement responsables de nos actions et nous travaillons sans relâche pour assurer la satisfaction de nos clients."
-  ];
-
-  const handleSecurityClick = () => {
-    setIndex(0);
-  };
-
-  const handleReliabilityClick = () => {
-    setIndex(1);
-  };
-
-  const handleRespectClick = () => {
-    setIndex(2);
-  };
-
-  const handleResponsibilityClick = () => {
-    setIndex(3);
-  };
-
+function About() {
   return (
-    <div>
-      <p>{texts[index]}</p>
+    <main>
+      <div className="about">
+      <img src={AboutUsBg} className="about_bg" alt="logo" />
       <div>
-        <button onClick={handleSecurityClick}>Sécurité</button>
-        <button onClick={handleReliabilityClick}>Fiabilité</button>
-        <button onClick={handleRespectClick}>Respect</button>
-        <button onClick={handleResponsibilityClick}>Responsabilité</button>
+        <Collapse titre="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
+        <Collapse titre="Respect" description="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
+        <Collapse titre="Service" description="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />
+        <Collapse titre="Sécurité" description="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes." />
       </div>
     </div>
+    </main>
   );
-};
+}
 
 export default About;
+
