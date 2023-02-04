@@ -1,13 +1,22 @@
+@import '../../../styles/settings.scss';
+
 .error {
     text-align: center;
-    color:#FF6060;
-    &_title{
+
+    &_title {
         font-size: 288px;
+        margin: 3rem;
     }
-    &_p{
+
+    &_text {
+        margin: 5rem;
+    }
+
+    &_p {
         font-size: 36px ;
     }
-    &_link{
+
+    &_link {
         font-size: 18px;
         color:#FF6060;
     }

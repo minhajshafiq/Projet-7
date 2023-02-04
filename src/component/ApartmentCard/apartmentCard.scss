@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .card_list {
-    margin: 2.5rem;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -21,18 +21,18 @@
   }
   }
 
-  .card_container {
+.card_container {
     display:flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin-top: 2rem;
-    }
+  }
 
-    .card_text {
-      position: absolute;
-      bottom: 10px;
-      left: 5rem;
-      color: white;
-      font-size: 18px;
-      }
+.card_text {
+    position: absolute;
+    bottom: 10px;
+    left: 5rem;
+    color: white;
+    font-size: 18px;
+  }
