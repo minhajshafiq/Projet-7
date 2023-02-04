@@ -1,12 +1,12 @@
+@import './settings.scss';
+
 body {
   margin: 0;
-  font-family: sans-serif, Montserrat;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #FF6060;
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-color;
 }
 
 main {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
