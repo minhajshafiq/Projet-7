@@ -8,9 +8,11 @@ function LocationsListCard() {
         <section className="card_list">
                 {
                 LocationsDatas.map((location) =>
-                    <Link className="card_overlay" to={"/location/" + location.id} key={location.id}>
-                    <img className="card_img" src={location.cover} alt={location.title} />
-                    <p className="card_text">{location.title}</p>
+                    <Link to={"/location/" + location.id} key={location.id}>
+                        <div className="card_container">
+                            <img className="card_img" src={location.cover} alt={location.title} />
+                            <p className="card_text">{location.title}</p>
+                        </div>
                     </Link>
                 )
                 }

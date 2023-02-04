@@ -6,10 +6,8 @@ import HeroBanner from '../../heroBanner/HeroBanner.jsx';
 function Home() {
   return (
       <main>
-        <HeroBanner />
-        <div className='CardContainer'>
-            <LocationsListCard />
-        </div>
+          <HeroBanner />
+          <LocationsListCard />
       </main>
   )
 }
