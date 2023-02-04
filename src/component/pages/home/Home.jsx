@@ -1,4 +1,4 @@
-import Card from '../../apartmentCard/apartmentCard.jsx'
+import LocationsListCard from '../../apartmentCard/apartmentCard.jsx'
 
 import HeroBanner from '../../heroBanner/HeroBanner.jsx';
 
@@ -9,7 +9,7 @@ function Home() {
       <main>
         <HeroBanner />
         <div className='CardContainer'>
-            <Card />
+            <LocationsListCard />
         </div>
       </main>
     </div>
