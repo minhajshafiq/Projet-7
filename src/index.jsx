@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "../src/styles/index.scss";
 
 import Home from './component/pages/home/Home';
-import Logement from './component/pages/Logement.jsx';
+import Logement from './component/pages/location/Location.jsx';
 import About from './component/pages/about/AboutUs.jsx';
 import Error from './component/pages/error/Error.jsx';
 

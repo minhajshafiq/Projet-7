@@ -6,11 +6,11 @@ function Collapse({ titre, description }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="about_buttons">
-      <button className='about_button' onClick={() => setOpen(!open)}>
-        <h2 className='about_title'>{titre}</h2> <FontAwesomeIcon className='about_angle' icon={open ? faAngleUp : faAngleDown} />
+    <div>
+      <button className='aboutbutton locationbutton' onClick={() => setOpen(!open)}>
+        <h2 className='abouttitle locationtitle common-class'>{titre}</h2> <FontAwesomeIcon className='about_angle' icon={open ? faAngleUp : faAngleDown} />
       </button>
-      {open && <p className='about_description'>{description}</p>}
+      {open && <p className='aboutdescription locationdescription common-class'>{description}</p>}
     </div>
   );
 }
