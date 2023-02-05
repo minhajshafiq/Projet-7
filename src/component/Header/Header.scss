@@ -3,8 +3,8 @@
 .kasa{
     display:flex;
     justify-content: space-between;
-    margin:3rem;
     align-items: center;
+    margin: 3rem;
 
     &_navbar {
         margin: 1rem;
@@ -17,7 +17,11 @@
         color: $primary-color;
     
         &.active {
-            border-bottom: 2px solid;
+            text-decoration: underline;
+        }
+
+        &.no_underline {
+            text-decoration: none;
         }
     }
     
@@ -27,9 +31,36 @@
         color: $primary-color;
     
         &.active {
-            border-bottom: 2px solid;
+            text-decoration: underline;
         }
     }
-
-
 }
+
+// Media Queries Mobile
+
+@media (max-width: 850px) {
+    .kasa {
+     margin: 1.5rem;
+
+         &_logo {
+             width: 80%;
+             height: 80%;
+         }
+
+         &_navbar {
+             font-size: 12px;
+             margin: 0;
+             text-transform: uppercase;
+         } 
+
+         &_welcome {
+             margin-left: 0;
+             text-decoration: underline;
+         }
+
+         &_about {
+             margin: 0;
+         }
+    }
+
+ }
