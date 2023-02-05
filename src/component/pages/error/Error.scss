@@ -20,4 +20,24 @@
         font-size: 18px;
         color:#FF6060;
     }
+
+    @media (max-width: 850px) {
+        &_title {
+            font-size: 96px;
+            margin-top: 9rem;
+        }
+
+        &_text {
+            margin: 0;
+            margin-bottom: 5rem;
+        }
+
+        &_p {
+            font-size: 18px;
+        }
+
+        &_link {
+            font-size: 14px;
+        }
+    }
 }

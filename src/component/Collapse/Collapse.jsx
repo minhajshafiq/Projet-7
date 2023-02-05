@@ -8,9 +8,9 @@ function Collapse({ titre, description }) {
   return (
     <div>
       <button className='aboutbutton locationbutton' onClick={() => setOpen(!open)}>
-        <h2 className='abouttitle locationtitle common-class'>{titre}</h2> <FontAwesomeIcon className='about_angle' icon={open ? faAngleUp : faAngleDown} />
+        <h2 className='abouttitle locationtitle'>{titre}</h2> <FontAwesomeIcon className='about_angle' icon={open ? faAngleUp : faAngleDown} />
       </button>
-      {open && <p className='aboutdescription locationdescription common-class'>{description}</p>}
+      {open && <p className='aboutdescription locationdescription'>{description}</p>}
     </div>
   );
 }
