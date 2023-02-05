@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,12 +6,25 @@
     background-color:black;
     color: white;
     
-    &_box{
+    &_box {
         margin-top: 2rem;
     }
 
-    &_text{
+    &_text {
         align-items: center;
         margin: 1rem;
+        font-size: 24px;
+    }
+
+
+}
+
+// Media Queries Mobile
+
+@media (max-width: 850px) {
+    .footer {
+        &_text {
+            font-size: 12px;
+        }
     }
 }
