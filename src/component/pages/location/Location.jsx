@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 import LocationsDatas from '../../data/logements.json';
-import Collapse from '../../Collapse/Collapse';
+import Collapse from '../../collapse/Collapse';
+import SliderComponent from '../../slideShow/SlideShow.jsx';
 import './Location.scss';
 
 
 function Logement() {
   const { id } = useParams();
   const [location, setLocation] = useState(null);
-  const farStar = ['star', 'regular'];
 
   useEffect(() => {
     const location = LocationsDatas.find(l => l.id === id);
@@ -21,21 +19,9 @@ function Logement() {
     return;
   }
 
-  function renderStars() {
-    const stars = [];
-    for (let i = 0; i < 5; i++) {
-      if (i < location.rating) {
-        stars.push(<FontAwesomeIcon icon={fasStar} key={i} />);
-      } else {
-        stars.push(<FontAwesomeIcon icon={['far', farStar]} key={i} />);
-      }
-    }
-    return stars;
-  }
-
   return (
     <main>
-        <img className='location_img' src={location.cover} alt={location.title} />
+        <SliderComponent pictures={location.pictures} />
 
             <h1 className='location_title' >{location.title}</h1>
             <p className='location_location'>{location.location}</p>
@@ -47,7 +33,7 @@ function Logement() {
             {location.tags.map((tag, index) => <p className='location_tag' key={index}>{tag}</p>)}
             </div>
 
-            <div className='location_rating'>{renderStars()}</div>
+            <div className='location_rating'>{location.rating}</div>
 
             <div className='location_descequip'>
                 <Collapse titre="Description" description={location.description} />

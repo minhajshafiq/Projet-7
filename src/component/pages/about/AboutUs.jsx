@@ -1,5 +1,5 @@
 import AboutUsBg from "../../../assets/aboutUsBg.png"
-import Collapse from '../../Collapse/Collapse';
+import Collapse from '../../collapse/Collapse.jsx';
 import './AboutUs.scss'
 
 function About() {
