@@ -16,4 +16,3 @@ function Collapse({ titre, description }) {
 }
 
 export default Collapse;
-
