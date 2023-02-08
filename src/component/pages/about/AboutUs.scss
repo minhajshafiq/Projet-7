@@ -5,7 +5,7 @@
     align-items: center;
     padding: 2rem;
     &_bg {
-        width: 90%;
+        width: 100%;
         height: 223px;
         border-radius: 25px;
         filter: brightness(50%);
@@ -54,7 +54,7 @@
 @media (max-width: 850px) {
     .about {
         &_bg {
-
+            width: 100%;
         }
 
         .aboutbutton {

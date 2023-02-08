@@ -8,7 +8,7 @@ function Header() {
     const location = useLocation();
   
     return (
-        <header className="kasa">
+        <header id="header" className="kasa">
             <Link to="/"><img src={kasalogo} alt='Logo Kasa' className="kasa_logo" /></Link>
             <nav className="kasa_navbar">
             <Link className={`kasa_welcome ${location.pathname === '/' ? 'active' : ''} ${location.pathname === '/about' ? 'no_underline' : ''}`} to="/">Accueil</Link>
