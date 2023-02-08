@@ -1,17 +1,20 @@
 @import '../../styles/settings.scss';
 
-.kasa{
+#header.kasa{
     display:flex;
     justify-content: space-between;
     align-items: center;
     margin: 3rem;
 
-    &_navbar {
+    .kasa_navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         margin: 1rem;
         font-size: 24px;
     }
 
-    &_welcome{
+    .kasa_welcome{
         text-decoration: none;
         margin: 1rem;
         color: $primary-color;
@@ -25,7 +28,7 @@
         }
     }
     
-    &_about{
+    .kasa_about{
         text-decoration: none;
         margin: 1rem;
         color: $primary-color;
@@ -39,26 +42,29 @@
 // Media Queries Mobile
 
 @media (max-width: 850px) {
-    .kasa {
+    #header.kasa {
      margin: 1.5rem;
 
-         &_logo {
-             width: 70%;
-             height: 70%;
+         .kasa_logo {
+             width: 100%;
          }
 
-         &_navbar {
+         .kasa_navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
              font-size: 12px;
              margin: 0;
              text-transform: uppercase;
          } 
 
-         &_welcome {
+         .kasa_welcome {
              margin-left: 0;
              text-decoration: underline;
          }
 
-         &_about {
+         .kasa_about {
              margin: 0;
          }
     }
