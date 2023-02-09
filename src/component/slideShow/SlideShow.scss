@@ -1,0 +1,43 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &_previous,&_next {
+        position: absolute;
+        top: 33%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &_previous {
+        left: 100px;
+    }
+
+    &_image {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+    }
+
+    &_next {
+        right: 100px;
+    }
+
+    &_count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 700px;
+        left: 0;
+        right: 0;
+    }
+}
+
