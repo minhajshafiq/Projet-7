@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import LocationsDatas from '../../data/logements.json';
+
 import Collapse from '../../collapse/Collapse';
+// import { getStarRating } from '../../starsRating/StarsRating.jsx';
 import Slider from '../../slideShow/SlideShow.jsx';
+
 import './Location.scss';
 
 function Logement() {
@@ -19,7 +23,7 @@ function Logement() {
   }
 
   return (
-    <main>
+    <main id='location'>
         <Slider images={location.pictures} />
         
       <h1 className='location_title'>{location.title}</h1>
@@ -32,11 +36,17 @@ function Logement() {
         {location.tags.map((tag, index) => <p className='location_tag' key={index}>{tag}</p>)}
       </div>
 
-      <div className='location_rating'>{location.rating}</div>
+      {/* <div className='location_rating'>{getStarRating(location.rating)}</div> */}
 
-      <div className='location_descequip'>
-        <Collapse titre="Description" description={location.description} />
-        <Collapse titre="Équipements" description={location.equipments.map((equipment, index) => <p className='location_equipment' key={index}>{equipment}</p>)} />
+      <div className='location_btnlist'>
+
+        <div className='location_btn'>
+          <Collapse title="Description" description={location.description} />
+        </div>
+
+        <div className='location_btn'>
+          <Collapse title="Équipements" description={location.equipments.map((equipment, index) => <p className='location_equipment' key={index}>{equipment}</p>)} />
+        </div>
       </div>
 
     </main>

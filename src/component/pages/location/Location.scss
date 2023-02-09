@@ -1,21 +1,28 @@
-.location{
-    &_img {
-        width: 100%;
-        height: 100%;
-        border-radius: 25px;
-    }
+@import "../../../styles/settings.scss";
 
-    &_title {
+#location {
+
+    .location_title {
         margin-bottom: 0;
         font-size: 36px;
     }
 
-    &_tags {
+    .location_location {
+        background: white;
+        margin: 1rem;
+    }
+
+    .location_hostname {
+        background: white;
+        margin: 1rem;
+    }
+
+    .location_tags {
         display: flex;
         padding: 1rem;
     }
 
-    &_tag {
+    .location_tag {
         font-size: 14px;
         background: #FF6060;
         border-radius: 10px;
@@ -26,41 +33,50 @@
         color:#F7F7F7;
     }
 
-    &_descequip {
+    .location_btnlist {
         display: flex;
         justify-content: space-between;
-        margin: 3rem;
+        margin: 3rem auto;
     }
-}
 
-.locationbutton {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    margin-top: 2rem;
-    background: #FF6060;
-    border: none;
-    border-radius: 10px;
-}
+    .location_btn {
+        width: 100%;
+        max-width: 582px;
+    }
+    
+    button {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $primary-color;
+        border: none;
+        border-radius: 5px;
+        min-width: 582px;
+    }
 
-.locationtitle {
-    margin: 1rem;
-    color:white;
-    font-size: 18px;
-}
+    h2 {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        color:white;
+        font-size: 18px;
+    }
 
-.locationdescription {
-    padding: 10px;
-    padding-top: 38px;
-    padding-bottom: 30px;  
-    margin-top:0;
-    background: #F7F7F7;
-    border-radius: 10px;
-    font-size: 18px;
-}
+    .angle {
+        width: 2rem;
+        height: 2rem;
+    }
 
-.common-class {
-    display: inline-block;
-    width: 100%;
-  }
+     p {
+        font-size: 18px;
+        line-height: 142.6%;
+        background: $background-color;
+        margin: 0;
+        // padding: 40px 1rem 53px 1rem;
+        border-radius: 10px;
+     }
+
+     .location_equipment {
+        padding: 0;
+     }
+}
