@@ -15,17 +15,19 @@ const Slider = ({ images }) => {
   };
 
   return (
-    <div className="slider">
-      <p className="slider_previous" onClick={handlePrevious}>
-        <svg viewBox="0 0 50 50">
-          <path d="M30.8,24.4l-0.7-0.7L20,15.6l10.1-10.1l-0.7-0.7L18.6,14l8.5-8.5l-0.7,0.7L17.2,15.4L6.1,26.5l0.7,0.7L18.6,17l-8.5,8.5L20,18.4
-          L30.8,24.4z"/>
-        </svg>
-      </p>
-
+    <div id="slider">
+      <div className="slider_previous" onClick={handlePrevious}>
+      <svg className='arrow left' viewBox="0 0 24 24">
+        <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+      </svg>
+      </div>
       <img className="slider_image" src={images[currentIndex]} alt="" />
-      <p className="slider_count">{currentIndex + 1} / {images.length}</p>
-      <p className="slider_next" onClick={handleNext}>Next</p>
+      <div className="slider_count">{currentIndex + 1}/{images.length}</div>
+      <div className="slider_next" onClick={handleNext}>
+      <svg className='arrow right' viewBox="0 0 24 24">
+        <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+      </svg>
+      </div>
     </div>
   );
 };

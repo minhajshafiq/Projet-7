@@ -2,36 +2,58 @@
 
 #location {
 
-    .location_title {
-        margin-bottom: 0;
-        font-size: 36px;
-    }
+    .location {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
-    .location_location {
-        background: white;
-        margin: 1rem;
-    }
+        .location_title {
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-size: 36px;
+        }
+    
+        .location_localisation {
+            margin: 1rem 0 1rem 0;
+        }
+    
+        .location_tags {
+            display: flex;
+            margin: 1rem 0 1rem 0;
+            
+            .location_tag {
+                font-size: 14px;
+                background: #FF6060;
+                border-radius: 10px;
+                padding: 0.2rem;
+                padding-left: 1.2rem;
+                padding-right: 1.2rem;
+                margin: 0.2rem;
+                color:#F7F7F7;
+            }
+        }
 
-    .location_hostname {
-        background: white;
-        margin: 1rem;
-    }
+        .host_info {
+            display: flex;
+            justify-content: flex-end;
+            margin: 1rem;
 
-    .location_tags {
-        display: flex;
-        padding: 1rem;
-    }
+            .host_name {
+                font-size: 18px;
+                margin: 1rem;
+            }
 
-    .location_tag {
-        font-size: 14px;
-        background: #FF6060;
-        border-radius: 10px;
-        padding: 0.2rem;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
-        margin: 0.2rem;
-        color:#F7F7F7;
-    }
+            .host_pic {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+
+            .location_rating {
+                display: flex;
+                margin-top: 1rem;
+             }
+        }
+     }
 
     .location_btnlist {
         display: flex;
@@ -77,6 +99,21 @@
      }
 
      .location_equipment {
-        padding: 0;
+        padding: 0.5rem;
      }
+     
+     .star {
+        fill: $primary-color;
+      }
+      
+      .empty {
+        fill: #ddd;
+      }
+      
+      .star,
+      .empty {
+        height: 24px;
+        width: 24px;
+        margin-right: 0.5rem;
+      }
 }
