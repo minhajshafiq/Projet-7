@@ -1,12 +1,17 @@
 import AboutUsBg from "../../../assets/aboutUsBg.png"
 import Collapse from '../../collapse/Collapse.jsx';
+import HeroBanner from '../../heroBanner/HeroBanner.jsx';
 import './AboutUs.scss'
 
 function About() {
   return (
     <main id="about">
       <div className="about_bg">
-      <img src={AboutUsBg} className="about_img" alt="logo" />
+        <HeroBanner
+          imageUrl={AboutUsBg}
+          altText="Bannière Hero"
+          headingText=""
+        />
       </div>
       <div className="about_btnlist">
         <Collapse title="Fiabilité" description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />

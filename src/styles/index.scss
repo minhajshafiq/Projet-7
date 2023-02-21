@@ -1,6 +1,7 @@
 @import './settings.scss';
 
 body {
+  max-width: 1440px;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: $primary-color;
