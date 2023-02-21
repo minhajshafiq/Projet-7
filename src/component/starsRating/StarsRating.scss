@@ -1,0 +1,16 @@
+@import "../../styles/settings.scss";
+
+.star {
+    fill: $primary-color;
+  }
+  
+  .empty {
+    fill: #ddd;
+  }
+  
+  .star,
+  .empty {
+    height: 24px;
+    width: 24px;
+    margin-right: 0.5rem;
+  }

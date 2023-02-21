@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import './Collapse.scss';
 
 function Collapse({ title, description }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <div id="Collapse">
       <button onClick={() => setOpen(!open)}>
         <h2>{title}</h2>
         <svg className="angle" viewBox="0 0 24 24">

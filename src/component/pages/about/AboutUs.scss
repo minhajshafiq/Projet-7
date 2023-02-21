@@ -22,41 +22,6 @@
         max-width: 1023px;
     }
 
-    button {
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        background: $primary-color;
-        border: none;
-        border-radius: 5px;
-        width: 100%;
-    }
-
-    h2 {
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        color:white;
-        font-size: 24px;
-    }
-
-    .angle {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    p {
-        font-size: 24px;
-        background: $background-color;
-        margin: 0;
-        padding: 2rem 1rem 1rem 1rem;
-    }
-
-    &_angle {
-        margin: 1rem;
-        color:white;
-        font-size: 24px;
-    }
 }
 
 // Media Queries Mobile
