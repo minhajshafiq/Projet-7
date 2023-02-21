@@ -34,8 +34,15 @@
 
         .host_info {
             display: flex;
+            flex-direction: column;
             justify-content: flex-end;
+            align-items: flex-end;            
             margin: 1rem;
+
+            .host_desc {
+                display: flex;
+                align-items: center;
+            }
 
             .host_name {
                 font-size: 18px;

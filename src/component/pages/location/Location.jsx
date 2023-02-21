@@ -39,8 +39,11 @@ function Logement() {
         </div>
         <div className='host_info'>
 
-          <div className='host_name'>{location.host.name}</div>
-          <img className='host_pic' src={location.host.picture} alt={location.host.name} />
+          <div className='host_desc'>
+            <div className='host_name'>{location.host.name}</div>
+            <img className='host_pic' src={location.host.picture} alt={location.host.name} />
+          </div>
+          
           <div className="location_rating">
           <StarRating rating={location.rating} />
 
