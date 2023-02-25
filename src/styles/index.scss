@@ -1,8 +1,9 @@
 @import './settings.scss';
 
 body {
+  display: grid;
   max-width: 1440px;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   color: $primary-color;
 }
