@@ -8,12 +8,14 @@ import './Home.scss';
 function Home() {
   return (
       <main>
-          <HeroBanner
-          imageUrl={BannerBackground}
-          altText="Bannière Hero"
-          headingText="Chez vous, partout et ailleurs"
-          />
-          <LocationsListCard />
+        <div className='homeBanner'>
+            <HeroBanner
+            imageUrl={BannerBackground}
+            altText="Bannière Hero"
+            headingText="Chez vous, partout et ailleurs"
+            />
+        </div>
+        <LocationsListCard />
       </main>
   )
 }

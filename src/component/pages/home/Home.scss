@@ -1,10 +1,15 @@
+.homeBanner {
+  position: relative;
+  height: 223px;
+}
+
+
 @media (max-width: 425px) {
+  .homeBanner {
+    height: 111px;
+  }
     .heroBanner {
-  
-      &_img {
-        height: 111px;
-      }
-  
+
       &_text {
         font-size: 24px;
         left: 35%;
