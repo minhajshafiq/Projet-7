@@ -40,9 +40,8 @@
         .host_info {
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
             align-items: flex-end;            
-            margin: 1rem;
+            margin: 1rem 0;
 
             .host_desc {
                 display: flex;
