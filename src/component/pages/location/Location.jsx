@@ -6,6 +6,8 @@ import LocationsDatas from '../../data/logements.json';
 import Collapse from '../../collapse/Collapse';
 import StarRating from '../../starsRating/StarsRating.jsx';
 import Slider from '../../slideShow/SlideShow.jsx';
+import Error from '../error/Error.jsx';
+
 
 import './Location.scss';
 
@@ -19,7 +21,7 @@ function Logement() {
   }, [id]);
 
   if (!location) {
-    return;
+    return <Error />;
   }
 
   return (
