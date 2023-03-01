@@ -53,3 +53,21 @@
       }
       
 }
+
+@media (max-width: 850px) {
+  #slider {
+    .slider_image {
+      height: 255px;
+    }
+
+    .slider_count {
+      display: none;
+    }
+
+    .slider_controls .slider_previous svg,
+    .slider_controls .slider_next svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

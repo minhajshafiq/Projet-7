@@ -10,7 +10,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin: 1rem;
+        margin: 1rem 0;
         font-size: 24px;
     }
 
@@ -30,7 +30,7 @@
     
     .kasa_about{
         text-decoration: none;
-        margin: 1rem;
+        margin: 1rem auto;
         color: $primary-color;
     
         &.active {
