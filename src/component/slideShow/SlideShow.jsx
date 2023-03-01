@@ -16,18 +16,24 @@ const Slider = ({ images }) => {
 
   return (
     <div id="slider">
-      <div className="slider_previous" onClick={handlePrevious}>
-      <svg className='arrow left' viewBox="0 0 24 24">
-        <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-      </svg>
+      <div className='slider_overlay'>
+        <div className='slider_controls'>
+          <div className="slider_previous" onClick={handlePrevious}>
+            <svg className='arrow left' viewBox="0 0 24 24">
+              <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+            </svg>
+          </div>
+
+          <div className="slider_count">{currentIndex + 1}/{images.length}</div>
+              
+          <div className="slider_next" onClick={handleNext}>
+            <svg className='arrow right' viewBox="0 0 24 24">
+              <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+            </svg>
+          </div>
+        </div>
       </div>
       <img className="slider_image" src={images[currentIndex]} alt="" />
-      <div className="slider_count">{currentIndex + 1}/{images.length}</div>
-      <div className="slider_next" onClick={handleNext}>
-      <svg className='arrow right' viewBox="0 0 24 24">
-        <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-      </svg>
-      </div>
     </div>
   );
 };
