@@ -1,5 +1,16 @@
 @import './settings.scss';
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 body {
   display: grid;
   max-width: 1440px;
@@ -9,8 +20,13 @@ body {
 }
 
 main {
+  flex-grow: 1;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+footer {
+  height: 209px;
 }
 
 // Media Queries Mobile
