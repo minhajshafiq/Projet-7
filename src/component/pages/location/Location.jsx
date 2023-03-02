@@ -57,11 +57,11 @@ function Logement() {
 
       <div className='location_btnlist'>
 
-        <div className='location_btn'>
+        <div className='location_btn bouton_1'>
           <Collapse title="Description" description={location.description} />
         </div>
 
-        <div className='location_btn'>
+        <div className='location_btn bouton_2'>
           <Collapse title="Équipements" description={location.equipments.map((equipment, index) => <li className='location_equipment' key={index}>{equipment}</li>)} />
         </div>
 

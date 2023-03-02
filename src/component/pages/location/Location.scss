@@ -78,6 +78,16 @@
         max-width: 582px;
     }
 
+    .bouton {
+        &_1 {
+            margin: 1rem 1rem 1rem 0;
+        }
+
+        &_2 {
+            margin: 1rem 0 1rem 1rem;
+        }
+    }
+
      .location_equipment {
         line-height: 142.6%;
         list-style: none;
