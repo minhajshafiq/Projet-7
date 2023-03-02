@@ -14,6 +14,14 @@ const Slider = ({ images }) => {
     setCurrentIndex(newIndex);
   };
 
+  if (images.length === 1) {
+    return (
+      <div id="slider">
+        <img className="slider_image" src={images[currentIndex]} alt="" />
+      </div>
+    );
+  }
+
   return (
     <div id="slider">
       <div className='slider_overlay'>
@@ -25,7 +33,7 @@ const Slider = ({ images }) => {
           </div>
 
           <div className="slider_count">{currentIndex + 1}/{images.length}</div>
-              
+
           <div className="slider_next" onClick={handleNext}>
             <svg className='arrow right' viewBox="0 0 24 24">
               <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
