@@ -19,6 +19,7 @@
         }
     
         .location_localisation {
+            font-size: 18px;
             margin: 0.5rem 0;
         }
     
@@ -30,9 +31,7 @@
                 font-size: 14px;
                 background: #FF6060;
                 border-radius: 10px;
-                padding: 0.2rem;
-                padding-left: 1.2rem;
-                padding-right: 1.2rem;
+                padding: 0.3rem 1.2rem;
                 margin: 0.2rem;
                 color:#F7F7F7;
             }
@@ -101,6 +100,7 @@
 
         p {
             font-size: 18px;
+            line-height: 25px;
             border-radius: 10px;
         }
      }
@@ -170,6 +170,7 @@
     
             p {
                 font-size: 12px;
+                line-height: 17px;
             }
          }
 
