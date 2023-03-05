@@ -15,7 +15,12 @@
     .angle {
         width: 2rem;
         height: 2rem;
-    }
+        transition: transform 0.3s ease-in-out;
+
+        &_up {
+            transform: rotate(180deg);
+          }  
+      }   
 
     h2 {
         margin-left: 1rem;
@@ -31,5 +36,6 @@
         background: $background-color;
         margin: 0;
         padding: 2rem 1rem 1rem 1rem;
+        border-radius: 5px;
     }
 }

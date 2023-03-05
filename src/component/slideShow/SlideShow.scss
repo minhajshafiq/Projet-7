@@ -30,6 +30,7 @@
       .arrow.left,
       .arrow.right {
         fill: white;
+        cursor: pointer;
       }      
 
       .arrow.left {
@@ -58,7 +59,11 @@
         width: 100px;
         height: 100px;
       }
-      
+
+      .slider_controls .slider_previous:hover,
+      .slider_controls .slider_next:hover {
+        transform: scale(1.25);
+      }
 }
 
 @media (max-width: 850px) {
