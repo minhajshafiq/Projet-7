@@ -11,8 +11,10 @@
     .heroBanner {
 
       &_text {
+        width: 217px;
+        left: 40%;
+        text-align: left;
         font-size: 24px;
-        left: 35%;
       }
     }
   }
