@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import LocationsDatas from '../../data/logements.json';
+import LocationsDatas from '../../component/data/logements.json';
 
-import Collapse from '../../collapse/Collapse';
-import StarRating from '../../starsRating/StarsRating.jsx';
-import Slider from '../../slideShow/SlideShow.jsx';
+import Collapse from '../../component/collapse/Collapse';
+import StarRating from '../../component/starsRating/StarsRating.jsx';
+import Slider from '../../component/slideShow/SlideShow.jsx';
 import Error from '../error/Error.jsx';
 
 

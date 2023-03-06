@@ -1,6 +1,6 @@
-import AboutUsBg from "../../../assets/aboutUsBg.png"
-import Collapse from '../../collapse/Collapse.jsx';
-import HeroBanner from '../../heroBanner/HeroBanner.jsx';
+import AboutUsBg from "../../assets/aboutUsBg.png"
+import Collapse from '../../component/collapse/Collapse.jsx';
+import HeroBanner from '../../component/heroBanner/HeroBanner.jsx';
 import './AboutUs.scss'
 
 function About() {
